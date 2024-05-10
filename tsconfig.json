@@ -1,34 +1,35 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "strict": true,
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "strictNullChecks": false,
-        "noImplicitAny": false,
-        "removeComments": true, 
-        "rootDir": ".",
-        "sourceMap": true,
-        "inlineSources": true,
-        "target": "es5",
-        "skipLibCheck": true,
-        "lib": [
-            "es2015",
-            "dom"
-        ],
-        "typeRoots": [
-            "node_modules/@types/"
-        ]
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "strict": true,
+    "noImplicitOverride": false,
+    "noPropertyAccessFromIndexSignature": true,
+    "paths": {
+      "lib": ["./dist/lib"]
     },
-    "exclude": [
-        "node_modules",
-        "examples"
-    ],
-    "angularCompilerOptions": {
-        "genDir": "./dist",
-        "skipMetadataEmit": false,
-        "skipTemplateCodegen": true
-    }
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": ["ES2022", "dom"],
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "removeComments": true
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
 }

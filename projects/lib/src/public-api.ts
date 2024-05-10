@@ -23,6 +23,6 @@
  * @angular/core : "9.x.x"
  * rxjs: "9.x.x"
  */
-export * from "./@core/index";
-export * from "./@directives/index";
-export * from "./responsive.module";
+export * from "./lib/@core/index";
+export * from "./lib/@directives/index";
+export * from "./lib/responsive.module";

@@ -16,7 +16,11 @@ import { Subscription } from 'rxjs';
 import { IResponsiveSubscriptions } from '../../interfaces';
 import { ResponsiveState } from '../responsive-state/responsive-state';
 import { PlatformService } from '../platform-service/platform.service';
+import { Component } from '@angular/core';
 
+@Component({
+  template: ''
+})
 export abstract class RESPONSIVE_BASE<T> implements OnInit, OnDestroy {
 
     private _noRepeat = 0;

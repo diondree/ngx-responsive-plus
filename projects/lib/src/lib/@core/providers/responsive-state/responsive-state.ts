@@ -60,11 +60,11 @@ export class ResponsiveState {
         this._userAgent = (this.isEnabledForPlatform) ? this._window.navigator.userAgent.toLowerCase() : null;
 
         if(this.isEnabledForPlatform) {
-           
+
             const _resize$ =  combineLatest(
                 fromEvent(this._window, 'resize').pipe(
                     debounceTime(this._responsiveConfig.config.debounceTime),
-                    defaultIfEmpty(),
+                    defaultIfEmpty(null),
                     startWith(this.getWidth('window'))
                 ),
                 this._forceRefresh$
@@ -74,25 +74,25 @@ export class ResponsiveState {
 
             const _pixelRatio$ = fromEvent(this._window, 'onload')
                 .pipe(
-                defaultIfEmpty(),
+                defaultIfEmpty(null),
                 startWith(this.getDevicePixelRatio())
                 );
 
             const _device$ = fromEvent(this._window, 'onload')
                 .pipe(
-                defaultIfEmpty(),
+                defaultIfEmpty(null),
                 startWith(this.getUserAgent())
                 );
 
             const _userAgent$ = fromEvent(this._window, 'onload')
                 .pipe(
-                defaultIfEmpty(),
+                defaultIfEmpty(null),
                 startWith(this.userAgentData())
                 );
 
             const _orientation$ = fromEvent(this._window, 'orientationchange')
                 .pipe(
-                defaultIfEmpty(),
+                defaultIfEmpty(null),
                 startWith(this.getOrientation())
                 );
 

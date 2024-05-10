@@ -1,0 +1,53 @@
+{
+  "name": "ngx-responsive-plus",
+  "description": "Superset of RESPONSIVE DIRECTIVES to show or hide items according to the size of the device screen and another features in Angular 9",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^17.3.0",
+    "@angular/core": "^17.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diondree/ngx-responsive-plus.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular4",
+    "angular5",
+    "angular6",
+    "angular7",
+    "angular8",
+    "angular9",
+    "angular10",
+    "ng2",
+    "ng",
+    "ngx",
+    "responsive",
+    "bootstrap",
+    "detect",
+    "mobile",
+    "tablet",
+    "useragent",
+    "devices",
+    "screen",
+    "typescript",
+    "directive",
+    "retina",
+    "browsers",
+    "universal",
+    "directives"
+  ],
+  "author": {
+    "name": "Diondre Edwards",
+    "url": ""
+  },
+  "bugs": {
+    "url": "https://github.com/diondree/ngx-responsive-plus/issues"
+  },
+  "homepage": "https://github.com/diondree/ngx-responsive-plus#readme"
+}
